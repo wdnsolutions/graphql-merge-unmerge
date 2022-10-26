@@ -289,7 +289,8 @@ function valueNodesAreEqual(
     (a.kind === 'BooleanValue' && b.kind === 'BooleanValue') ||
     (a.kind === 'FloatValue' && b.kind === 'FloatValue') ||
     (a.kind === 'IntValue' && b.kind === 'IntValue') ||
-    (a.kind === 'StringValue' && b.kind === 'StringValue')
+    (a.kind === 'StringValue' && b.kind === 'StringValue') ||
+    (a.kind === 'EnumValue' && b.kind === 'EnumValue')
   ) {
     return a.value === b.value;
   }
